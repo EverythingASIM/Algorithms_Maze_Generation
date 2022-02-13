@@ -50,7 +50,7 @@ public class Maze_Generation : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.Alpha5))
         {
-            GenerateRecursiveDivisioNewMaze(MazeRowSize, MazeColSize);
+            GenerateRecursiveDivisionNewMaze(MazeRowSize, MazeColSize);
 
             FitCameraToMaze();
         }
@@ -127,7 +127,7 @@ public class Maze_Generation : MonoBehaviour
     {
         if(primtoggle)
         {
-            RandomizePrismMaze maze = new RandomizePrismMaze();
+            RandomizePrimMaze maze = new RandomizePrimMaze();
             maze.CreateMaze(rows, cols);
 
             Tilemanager.Removetiles();
@@ -135,7 +135,7 @@ public class Maze_Generation : MonoBehaviour
         }
         else
         {
-            RandomizePrismMaze2 maze = new RandomizePrismMaze2();
+            RandomizePrimMaze2 maze = new RandomizePrimMaze2();
             maze.CreateMaze(rows, cols);
 
             Tilemanager.Removetiles();
@@ -143,7 +143,7 @@ public class Maze_Generation : MonoBehaviour
         }
         primtoggle = !primtoggle;
     }
-    void GenerateRecursiveDivisioNewMaze(int rows, int cols)
+    void GenerateRecursiveDivisionNewMaze(int rows, int cols)
     {
         RecursiveDivisioMaze maze = new RecursiveDivisioMaze();
         maze.CreateMaze(rows, cols);

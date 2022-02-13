@@ -9,7 +9,7 @@ namespace asim.unity.generation.maze
     /// <summary>
     /// Randomize Prism based on a list of walls/edges
     /// </summary>
-    public class RandomizePrismMaze : Maze
+    public class RandomizePrimMaze : Maze
     {
         MazeCell[,] cells;
         public override void CreateMaze(int rowNum, int colNum)
@@ -131,7 +131,7 @@ namespace asim.unity.generation.maze
     /// Randomize Prism based on a list of neighbours instead of list of walls/edges
     /// http://weblog.jamisbuck.org/2011/1/10/maze-generation-prim-s-algorithm
     /// </summary>
-    public class RandomizePrismMaze2 : Maze
+    public class RandomizePrimMaze2 : Maze
     {
         MazeCell[,] cells;
         public override void CreateMaze(int rowNum, int colNum)

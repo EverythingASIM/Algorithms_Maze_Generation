@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Text;
-
-using UnityEngine;
+using System.Collections.Generic;
 
 namespace asim.unity.generation.maze
 {
